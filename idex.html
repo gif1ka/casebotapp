@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Колесо</title>
+  <style>
+    body { text-align: center; font-family: sans-serif; margin-top: 40px; }
+    #wheel {
+      width: 200px; height: 200px;
+      border: 10px solid #333; border-radius: 50%;
+      margin: 20px auto;
+      background: conic-gradient(#f44336 0% 25%, #4caf50 25% 50%, #2196f3 50% 75%, #ffeb3b 75% 100%);
+      transition: transform 4s ease-out;
+    }
+    button {
+      padding: 12px 24px; font-size: 18px; border: none;
+      background: #673ab7; color: white; border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+  <h1>🎰 Колесо удачи</h1>
+  <div id="wheel"></div>
+  <button onclick="spin()">Крутить</button>
+  <script src="script.js"></script>
+</body>
+</html>
